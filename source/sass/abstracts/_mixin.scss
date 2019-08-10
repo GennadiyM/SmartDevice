@@ -1,0 +1,30 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin style-reset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin default-list {
+  @include style-reset;
+  list-style: none;
+}
+
+@mixin font-style($size, $height, $weight: $primary-font-weight, $color: $primary-font-color) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
