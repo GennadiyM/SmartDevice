@@ -1,0 +1,28 @@
+.page-header {
+  width: 100%;
+  min-height: 878px;
+  background-image: url("../img/noise-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-color: #1b2d37;
+  background-size: cover;
+}
+
+.page-header__content-container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@media ($breakpoints-large) {
+  .page-header {
+    min-height: 692.41px;
+    background-image: url("../img/noise-tablet@1x.png");
+  }
+}
+
+@media ($breakpoints-medium) {
+  .page-header {
+    min-height: 661.47px;
+    background-image: url("../img/noise-mobile@1x.png");
+  }
+}

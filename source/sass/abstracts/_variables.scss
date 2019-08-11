@@ -1,7 +1,7 @@
 $primary-font: "PT Mono", "Courier New", monospace;
 $primary-font-size: 16px;
 $primary-font-weight: 400;
-$primary-font-line-hieght: 22px;
+$primary-font-line-height: 22px;
 $primary-font-color: #666666;
 
 $second-font: "Roboto Condensed", "Arial", sans-serif;
@@ -10,10 +10,10 @@ $second-font-color: #ffffff;
 $primary-bg-color: #00b2ff;
 $second-bg-color: #1b2d37;
 
-$breakpoints-medium:"min-width: 768px";
-$breakpoints-large:"min-width: 1024px";
+$breakpoints-medium:"max-width: 749px";
+$breakpoints-large:"max-width: 1023px";
 
-$max-width: 1440px;
+$max-width: 1920px;
 
 $retina: (
   "dpi": 144dpi,

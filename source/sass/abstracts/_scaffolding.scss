@@ -11,7 +11,7 @@ html {
 body {
   @include style-reset;
   min-width: 320px;
-  font-family: $font-primary;
+  font-family: $primary-font;
   font-style: normal;
   font-size: $primary-font-size;
   font-weight: $primary-font-weight;
@@ -26,4 +26,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+textarea {
+  resize: none;
 }
