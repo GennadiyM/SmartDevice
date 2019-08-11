@@ -7,6 +7,13 @@
   <meta name="description" content="Компания по производству и монтажу печатных плат и комплектующих для светотехники">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+<!--
+  
+  <link rel="preload" href="fonts/PTMonoRegular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensedBold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensedRegular.woff2" as="font">
+-->
+  <script src="js/picturefill.js" async></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -35,7 +42,17 @@
           <a href="#" class="main-nav__button button button--feedback js-modal">Заказать звонок</a>
         </nav>
         <div class="header__promo promo">
-          <img src="img/microchips-desktop@1x.png" alt="печатные платы">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/microchips-tablet@1x.webp 1x, img/microchips-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/microchips-mobile@1x.webp 1x, img/microchips-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/microchips-desktop@1x.webp 1x, img/microchips-desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/microchips-tablet@1x.png 1x, img/microchips-tablet@2x.png 2x">
+            <!-- 1х: 294px; 2x: 588px -->
+            <source media="(max-width: 767px)" srcset="img/microchips-mobile@1x.png 1x, img/microchips-mobile@2x.png 2x">
+            <!-- 1х: 705px; 2x: 1410px -->
+            <img src="img/microchips-desktop@1x.png" srcset="img/microchips-desktop@2x.png 2x" alt="Печатные платы">
+          </picture>
           <div class="promo__info">
             <b>Печатные платы</b>
             <span>произвоство и монтаж, поставка комплектующих, блоков и модулей</span>
@@ -81,21 +98,51 @@
         <ul class="services__list">
           <li class="services__item">
             <a href="#" class="services__link">
-              <img src="img/production-desktop@1x.jpg" alt="Производство печатных плат">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/production-tablet@1x.webp 1x, img/production-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/production-mobile@1x.webp 1x, img/production-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/production-desktop@1x.webp 1x, img/production-desktop@2x.webp 2x">
+                <!-- 1х: 715px; 2x: 1430px -->
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/production-tablet@1x.jpg 1x, img/production-tablet@2x.jpg 2x">
+                <!-- 1х: 290px; 2x: 580px -->
+                <source media="(max-width: 767px)" srcset="img/production-mobile@1x.jpg 1x, img/production-mobile@2x.jpg 2x">
+                <!-- 1х: 370px; 2x: 740px -->
+                <img src="img/production-desktop@1x.jpg" srcset="img/production-desktop@2x.jpg 2x" alt="Производство печатных плат">
+              </picture>
               <h3>Производство печатных плат</h3>
               <span class="services__small-button"></span>
             </a>
           </li>
           <li class="services__item">
             <a href="#" class="services__link">
-              <img src="img/production-desktop@1x.jpg" alt="Монтаж печатных плат">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/installation-tablet@1x.webp 1x, img/installation-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/installation-mobile@1x.webp 1x, img/installation-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/installation-desktop@1x.webp 1x, img/installation-desktop@2x.webp 2x">
+                <!-- 1х: 720px; 2x: 1440px -->
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/installation-tablet@1x.jpg 1x, img/installation-tablet@2x.jpg 2x">
+                <!-- 1х: 290px; 2x: 580px -->
+                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.jpg 1x, img/installation-mobile@2x.jpg 2x">
+                <!-- 1х: 370px; 2x: 740px -->
+                <img src="img/installation-desktop@1x.jpg" srcset="img/installation-desktop@2x.jpg 2x" alt="Монтаж печатных плат">
+              </picture>
               <h3>Монтаж печатных плат</h3>
               <span class="services__small-button"></span>
             </a>
           </li>
           <li class="services__item">
             <a href="#" class="services__link">
-              <img src="img/production-desktop@1x.jpg" alt="Комплектующие для светотехники">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/led-tablet@1x.webp 1x, img/led-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/led-mobile@1x.webp 1x, img/led-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/led-desktop@1x.webp 1x, img/led-desktop@2x.webp 2x">
+                <!-- 1х: 720px; 2x: 1440px -->
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/led-tablet@1x.jpg 1x, img/led-tablet@2x.jpg 2x">
+                <!-- 1х: 290px; 2x: 580px -->
+                <source media="(max-width: 767px)" srcset="img/led-mobile@1x.jpg 1x, img/led-mobile@2x.jpg 2x">
+                <!-- 1х: 370px; 2x: 740px -->
+                <img src="img/led-desktop@1x.jpg" srcset="img/led-desktop@2x.jpg 2x" alt="Комплектующие для светотехники">
+              </picture>
               <h3>Комплектующие для светотехники</h3>
               <span class="services__small-button"></span>
             </a>
