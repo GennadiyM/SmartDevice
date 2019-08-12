@@ -1,0 +1,80 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 57px;
+}
+
+.promo__picture img {
+  display: block;
+  height: 531px;
+  width: 705px;
+  position: absolute;
+  top: 0;
+  right: -43px;
+  background-image: url("../img/triangle.svg");
+  background-size: 1920px 950px;
+  background-repeat: no-repeat;
+  background-position: left -1037px top -291px;
+  padding-bottom: 15px;
+  z-index: 0;
+}
+
+.promo b {
+  @include style-reset;
+  @include font-style(80px, 94px, 700, #ffffff);
+  position: relative;
+  font-family: $second-font;
+  min-width: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 28px;
+  word-wrap: break-word;
+  z-index: 1;
+}
+
+.promo span {
+  @include style-reset;
+  @include font-style(22px, 34px, 400, #ffffff);
+  position: relative;
+  width: 705px;
+  min-width: 0;
+  padding-left: 96px;
+  margin-bottom: 44px;
+  word-wrap: break-word;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 66px;
+    height: 2px;
+    top: 17px;
+    left: 3px;
+    background-color: #ffffff;
+  }
+}
+
+.promo__button {
+  position: relative;
+  margin-left: 96px;
+  margin-bottom: 131px;
+  z-index: 1;
+}
+
+.promo span.promo__additional-info {
+  @include style-reset;
+  font-size: 14px;
+  line-height: 16px;
+  width: 93px;
+  flex-shrink: 0;
+  transform: rotate(-90deg);
+  opacity: 0.5;
+  margin-left: -36px;
+
+  &::before {
+    display: none;
+  }
+}

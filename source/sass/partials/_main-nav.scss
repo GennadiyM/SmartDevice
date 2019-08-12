@@ -1,0 +1,70 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav__logo {
+  flex-shrink: 0;
+  margin-right: 8.2%;
+}
+
+.main-nav__toggle {
+  @include style-reset;
+  display: block;
+  width: 37px;
+  height: 13px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease 0s;
+  margin-right: auto;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    transition: background 0.2s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: #788891;
+  }
+}
+
+.main-nav__user-nav {
+  min-width: 345px;
+  width: 30.25%;
+  margin-right: 3.5%;
+}
+
+.main-nav__button {
+  flex-shrink: 0;
+}

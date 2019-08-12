@@ -1,0 +1,54 @@
+.user-nav {
+  @include default-list;
+  min-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-nav__item {
+  flex-shrink: 0;
+
+  &--email svg {
+    margin-right: 20px;
+  }
+
+  &--tel svg {
+    margin-right: 18px;
+  }
+}
+
+.user-nav__item svg {
+  flex-shrink: 0;
+  fill: #00b2ff;
+  transition: fill 0.2s ease 0s;
+}
+
+.user-nav__item a {
+  @include style-reset;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease 0s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #ffffff;
+  }
+}
+
+.user-nav__item span {
+  @include font-style(16px, 18px, 400, #ffffff);
+  flex-shrink: 0;
+  min-width: 0;
+  word-wrap: break-word;
+}

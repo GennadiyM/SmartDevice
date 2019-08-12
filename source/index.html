@@ -8,41 +8,53 @@
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 <!--
-  
   <link rel="preload" href="fonts/PTMonoRegular.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensedBold.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensedRegular.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto.woff2" as="font">
 -->
   <script src="js/picturefill.js" async></script>
 </head>
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <div class="page-wrapper">
     <header class="page-header">
       <div class="page-header__content-container">
         <nav class="main-nav page-header__main-nav">
           <a class="main-nav__logo logo">
+            <svg width="52px" height="52px"><use xlink:href="#icon-circuit"></use></svg>
             <p class="logo__text">
-              <b lang="en">
-                Smart Device
-              </b>
+              <b lang="en">Smart Device</b>
               <span>умные технологии</span>
             </p>
           </a>
           <button class="main-nav__toggle">
-            <span>Открытие меню</span>
+            <span class="visually-hidden">Открытие/скрытие меню</span>
           </button>
           <ul class="main-nav__user-nav user-nav">
             <li class="user-nav__item user-nav__item--email">
-              <a href="mailto:info@sd.ru">info@sd.ru</a>
+              <a href="mailto:info@sd.ru">
+                <svg width="14.62px" height="10.11px"><use xlink:href="#icon-email"></use></svg>
+                <span>info@sd.ru</span>
+              </a>
             </li>
             <li class="user-nav__item user-nav__item--tel">
-              <a href="tel:+74950005252">+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</a>
+              <a href="tel:+74950005252">
+                <svg width="16.91px" height="16.96px"><use xlink:href="#icon-phone"></use></svg>
+                <span>+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</span>
+              </a>
             </li>
           </ul>
           <a href="#" class="main-nav__button button button--feedback js-modal">Заказать звонок</a>
         </nav>
-        <div class="header__promo promo">
-          <picture>
+        <div class="page-header__promo promo">
+          <b>Печатные платы</b>
+          <span>производство и монтаж, поставка комплектующих, блоков и модулей</span>
+          <a href="#" class="promo__button button button--promo">Получить бесплатную консультацию</a>
+          <span class="promo__additional-info">Скролл вниз</span>
+          <picture class="promo__picture">
             <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/microchips-tablet@1x.webp 1x, img/microchips-tablet@2x.webp 2x">
             <source type="image/webp" media="(max-width: 767px)" srcset="img/microchips-mobile@1x.webp 1x, img/microchips-mobile@2x.webp 2x">
             <source type="image/webp" srcset="img/microchips-desktop@1x.webp 1x, img/microchips-desktop@2x.webp 2x">
@@ -53,13 +65,7 @@
             <!-- 1х: 705px; 2x: 1410px -->
             <img src="img/microchips-desktop@1x.png" srcset="img/microchips-desktop@2x.png 2x" alt="Печатные платы">
           </picture>
-          <div class="promo__info">
-            <b>Печатные платы</b>
-            <span>произвоство и монтаж, поставка комплектующих, блоков и модулей</span>
-            <a href="#" class="promo__button button button--promo">Получить бесплатную консультацию</a>
-          </div>
         </div>
-        <span class="header__additional-info">Скролл вниз</span>
       </div>
     </header>
     <main>
@@ -179,6 +185,7 @@
         <div class="page-footer__content-container">
           <div class="page-footer__social-container">
             <a class="page-footer__logo logo logo--footer">
+            <svg width="52px" height="52px"><use xlink:href="#icon-circuit"></use></svg>
               <p class="logo__text">
                 <b lang="en">
                   Smart Device

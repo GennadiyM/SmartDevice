@@ -1,0 +1,85 @@
+.logo {
+  @include style-reset;
+  width: 202px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease 0s;
+}
+
+.logo[href] {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #ffffff;
+  }
+
+  &:hover span,
+  &:focus span {
+    color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo svg {
+  width: 52px;
+  height: 52px;
+  margin-right: 16px;
+  fill: #00b2ff;
+  transition: fill 0.2s ease 0s;
+}
+
+.logo__text {
+  @include style-reset;
+  width: 134px;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 11px;
+}
+
+.logo b {
+  @include font-style(25px, 29px, 700, #ffffff);
+  font-family: $second-font;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  word-wrap: break-word;
+  margin-bottom: 1px;
+}
+
+.logo span {
+  @include font-style(12px, 14px, 500, #788891);
+  font-family: "Roboto", "Arial", sans-serif;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  word-wrap: break-word;
+  transition: color 0.2s ease 0s;
+}
+
+.logo--footer[href] {
+  &:hover svg,
+  &:focus svg {
+    fill: #203c42;
+  }
+
+  &:hover span,
+  &:focus span {
+    color: #203c42;
+  }
+}
+
+.logo--footer b {
+  color: #203c42;
+}

@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-htmlacademy",
-  "ignoreFiles": ["source/sass/base/normalize.scss"],
+  "ignoreFiles": "source/sass/base/normalize.scss",
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]

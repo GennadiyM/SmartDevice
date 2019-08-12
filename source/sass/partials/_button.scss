@@ -1,0 +1,44 @@
+.button {
+  @include style-reset;
+  @include font-style(14px, 16px, 700, #ffffff);
+  font-family: $second-font;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  min-height: 45px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 14px 13px 8px 12px;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: background 0.2s ease 0s, opacity 0.2s ease 0s;
+
+  &--feedback {
+    width: 180px;
+  }
+
+  &--promo {
+    width: 407px;
+    min-height: 55px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    background-color: #00b2ff;
+    border: none;
+    padding: 17px 28px 14px 28px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #788891;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
