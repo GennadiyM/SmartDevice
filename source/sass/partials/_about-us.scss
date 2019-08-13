@@ -35,15 +35,23 @@
   }
 }
 
+.about-us__invisible {
+  display: inline;
+}
+
+.about-us__dots {
+  display: none;
+}
+
 @media ($breakpoints-large) {
   .about-us {
-    padding-left: 211px;
-    padding-right: 31px;
+    padding-left: 212px;
+    padding-right: 13px;
 
     &::before {
       width: 223px;
       height: 344px;
-      top: 9px;
+      top: 6px;
       left: 12px;
       background-image: url("../img/date-tablet@1x.png");
     }
@@ -52,6 +60,18 @@
   .about-us h2 {
     font-size: 32px;
     line-height: 140.62%;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
+  }
+
+  .about-us__invisible {
+    display: none;
+  }
+
+  .about-us__dots {
+    display: inline;
+  }
+
+  .about-us p:last-of-type {
+    margin-bottom: 41px;
   }
 }

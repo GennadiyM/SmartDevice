@@ -1,6 +1,5 @@
 .main-info {
   width: 100%;
-  min-height: 1260px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,8 +20,17 @@
 
 @media ($breakpoints-large) {
   .main-info {
-    min-height: 1056px;
     padding-top: 53px;
+  }
+
+  .main-info__advantages {
+    margin-bottom: 28px;
+  }
+}
+
+@media ($breakpoints-medium) {
+  .main-info {
+    padding-top: 37px;
   }
 
   .main-info__advantages {
