@@ -56,3 +56,30 @@
   min-width: 0;
   word-wrap: break-word;
 }
+
+@media($breakpoints-large) {
+  .user-nav__item {
+
+    &--email svg {
+      width: 25.33px;
+      height: 18.67px;
+    }
+
+    &--tel svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .user-nav__item span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

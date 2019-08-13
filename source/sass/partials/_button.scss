@@ -42,3 +42,35 @@
     opacity: 0.3;
   }
 }
+
+
+  .button__text--small-wv {
+    display: none;
+  }
+
+  .button__text--big-wv {
+    display: inline;
+  }
+
+@media($breakpoints-large) {
+  .button {
+    &--promo {
+      width: 378px;
+    }
+  }
+}
+
+@media($breakpoints-medium) {
+  .button {
+    &--promo {
+      width: 100%;
+    }
+  }
+  
+  .button__text--small-wv {
+    display: inline;
+  }
+  .button__text--big-wv {
+    display: none;
+  }
+}

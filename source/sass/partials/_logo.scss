@@ -83,3 +83,28 @@
 .logo--footer b {
   color: #203c42;
 }
+
+@media ($breakpoints-medium) {
+  .logo {
+    width: 38px;
+    min-height: 38px;
+  }
+
+  .logo svg {
+    width: 38px;
+    height: 38px;
+    margin-right: 0;
+  }
+
+  .logo__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

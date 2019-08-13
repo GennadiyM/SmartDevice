@@ -28,19 +28,48 @@
 .page-header__promo {
   width: 100%;
   padding-left: 6px;
-  margin: 0 auto;
 }
 
 @media ($breakpoints-large) {
   .page-header {
-    min-height: 692.41px;
+    min-height: 687.47px;
     background-image: url("../img/noise-tablet@1x.png");
+    background-position-x: -18px;
+    overflow: hidden;
+  }
+
+  .page-header__main-nav {
+      min-height: 90px;
+      padding-left: 15px;
+      padding-right: 1px;
+      margin-bottom: 39px;
+  }
+
+  .page-header__promo {
+    padding-left: 77px;
   }
 }
 
 @media ($breakpoints-medium) {
   .page-header {
-    min-height: 661.47px;
+    min-height: 646.47px;
     background-image: url("../img/noise-mobile@1x.png");
+    background-position-x: -18px;
+  }
+
+  .page-header__main-nav {
+      min-height: 69px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+  }
+
+  .page-header__content-container {
+    padding-left: 16.5px;
+    padding-right: 16.5px;
+  }
+
+  .page-header__promo {
+    padding-left: 0;
   }
 }

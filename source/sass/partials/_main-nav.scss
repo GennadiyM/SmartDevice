@@ -68,3 +68,36 @@
 .main-nav__button {
   flex-shrink: 0;
 }
+
+@media($breakpoints-large) {
+  .main-nav__logo {
+    margin-right: auto;
+  }
+
+  .main-nav__toggle {
+    margin-top: -4px;
+    margin-right: 37px;
+  }
+
+  .main-nav__user-nav {
+    min-width: auto;
+    flex-shrink: 0;
+    width: 98px;
+    margin-right: 0;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+}
+
+@media($breakpoints-medium) {
+  .main-nav__toggle {
+    margin-top: 0;
+    margin-right: 27px;
+  }
+
+  .main-nav__user-nav {
+    width: 88px;
+  }
+}
