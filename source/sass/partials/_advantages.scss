@@ -159,7 +159,7 @@
 @media ($breakpoints-medium) {
   .advantages {
     padding-left: 14px;
-    padding-right: 14px;
+    padding-right: 16px;
   }
 
   .advantages__list {
@@ -169,6 +169,7 @@
 
   .advantages__item {
     width: 100%;
+    max-width: none;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -183,7 +184,16 @@
   .advantages__item--detective a {
     padding-top: 25px;
     padding-right: 22px;
-    padding-bottom: 10px;
+    padding-bottom: 37px;
+  }
+
+  .advantages__item--hired a {
+    padding-top: 22px;
+    padding-right: 11px;
+  }
+
+  .advantages__item--tag a {
+    padding-right: 17px;
   }
 
   .advantages svg {
@@ -193,12 +203,13 @@
   .advantages__item--hired svg {
     width: 31.61px;
     height: 32.18px;
+    margin-bottom: 16px;
   }
 
   .advantages__item--detective svg {
     width: 30.2px;
     height: 26.1px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   
   .advantages__item--tag svg {
@@ -214,7 +225,7 @@
   }
 
   .advantages__item--detective h3 {
-    margin-bottom: 16px;
+    margin-bottom: -9px;
   }
 
   .advantages p {

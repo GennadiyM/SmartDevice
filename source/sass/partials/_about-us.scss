@@ -75,3 +75,26 @@
     margin-bottom: 41px;
   }
 }
+
+@media ($breakpoints-medium) {
+  .about-us {
+    padding-left: 17px;
+    padding-right: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-us h2 {
+    margin-bottom: 19px;
+  }
+  
+  .about-us p {
+    margin-bottom: 39px;
+  }
+
+  .about-us p:last-of-type {
+    margin-bottom: 28px;
+  }
+}
