@@ -1,0 +1,30 @@
+.advantages {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.advantages__list {
+  @include default-list;
+  width: 100%;
+  min-height: 628px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+//  width: 29%;
+//  max-width: 570px;
+  width: 570px;
+  min-height: 299px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
