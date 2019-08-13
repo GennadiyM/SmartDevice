@@ -11,10 +11,17 @@
 .main-info__advantages {
   max-width: 1261px;
   margin: 0 auto;
-  margin-bottom: 74px;
+  margin-bottom: 75px;
 }
 
 .main-info__about-us {
   max-width: 1155px;
   margin: 0 auto;
+}
+
+@media ($breakpoints-large) {
+  .main-info {
+    min-height: 1056px;
+    padding-top: 53px;
+  }
 }

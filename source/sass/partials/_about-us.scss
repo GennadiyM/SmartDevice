@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   padding-left: 152px;
-  padding-right: 16px;
+  padding-right: 1%;
 
   &::before {
     position: absolute;
@@ -23,12 +23,12 @@
   @include font-style(36px, 51px, 400, #666666);
   font-family: $second-font;
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .about-us p {
   @include style-reset;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   &:last-of-type {
     margin-bottom: 39px;
