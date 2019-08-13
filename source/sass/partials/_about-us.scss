@@ -1,6 +1,36 @@
 .about-us {
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  background-color: #e5e5e5;
+  position: relative;
+  padding-left: 152px;
+  padding-right: 16px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 220px;
+    height: 317px;
+    top: 5px;
+    left: -58px;
+    background-image: url("../img/date-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.about-us h2 {
+  @include style-reset;
+  @include font-style(36px, 51px, 400, #666666);
+  font-family: $second-font;
+  display: block;
+  margin-bottom: 23px;
+}
+
+.about-us p {
+  @include style-reset;
+  margin-bottom: 19px;
+
+  &:last-of-type {
+    margin-bottom: 39px;
+  }
 }

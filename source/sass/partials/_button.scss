@@ -6,6 +6,7 @@
   letter-spacing: 0.05em;
   min-height: 45px;
   text-align: center;
+  display: block;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -29,6 +30,11 @@
     padding: 17px 28px 14px 28px;
   }
 
+  &--about-us {
+    width: 180px;
+    color: #00b2ff;
+    border-color: #00b2ff;
+  }
   &:focus {
     outline: none;
   }
