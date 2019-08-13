@@ -15,7 +15,7 @@
 }
 
 .main-info__about-us {
-  max-width: 1155px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -23,5 +23,9 @@
   .main-info {
     min-height: 1056px;
     padding-top: 53px;
+  }
+
+  .main-info__advantages {
+    margin-bottom: 28px;
   }
 }

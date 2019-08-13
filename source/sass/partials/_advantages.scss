@@ -104,7 +104,7 @@
   }
 
   .advantages__item {
-    width: 48.45%;
+    width: 47.45%;
     margin-right: 29px;
     margin-bottom: 30px;
   }
@@ -112,11 +112,14 @@
   .advantages a {
     min-height: auto;
     height: 100%;
-    padding: 24px 11px 5px 26px;
+    border-left: 2px solid #00b2ff;
+    padding: 24px 22px 6px 26px;
   }
 
   .advantages__item--detective a {
-    padding-top: 25px;
+    padding-top: 26px;
+    padding-right: 10px;
+    padding-bottom: 36px;
   }
 
   .advantages svg {
@@ -131,15 +134,17 @@
   .advantages__item--detective svg {
     width: 30.31px;
     height: 26.1px;
+    margin-bottom: 11px;
   }
   
   .advantages__item--tag svg {
     width: 32.18px;
     height: 32.18px;
+    margin-bottom: 10px;
   }
 
   .advantages h3 {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   .advantages__item--detective h3 {

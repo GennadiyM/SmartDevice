@@ -1,8 +1,8 @@
 .about-us {
   width: 100%;
   position: relative;
-  padding-left: 152px;
-  padding-right: 1%;
+  padding-left: 225px;
+  padding-right: 97px;
 
   &::before {
     position: absolute;
@@ -11,7 +11,7 @@
     width: 220px;
     height: 317px;
     top: 5px;
-    left: -58px;
+    left: 14px;
     background-image: url("../img/date-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -32,5 +32,26 @@
 
   &:last-of-type {
     margin-bottom: 39px;
+  }
+}
+
+@media ($breakpoints-large) {
+  .about-us {
+    padding-left: 211px;
+    padding-right: 31px;
+
+    &::before {
+      width: 223px;
+      height: 344px;
+      top: 9px;
+      left: 12px;
+      background-image: url("../img/date-tablet@1x.png");
+    }
+  }
+
+  .about-us h2 {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 21px;
   }
 }
