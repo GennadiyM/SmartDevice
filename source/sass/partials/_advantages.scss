@@ -16,14 +16,12 @@
 }
 
 .advantages__item {
-//  width: 29%;
-//  max-width: 570px;
   width: 570px;
   min-height: 299px;
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid black;
-  
+
   &:nth-child(2n) {
     margin-right: 0;
   }

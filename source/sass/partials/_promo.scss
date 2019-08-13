@@ -5,21 +5,29 @@
   align-items: flex-start;
   padding-top: 57px;
   padding-left: 6px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 705px;
+    height: 515px;
+    top: 0;
+    right: 0;
+    background-image: url("../img/triangle.svg");
+    background-repeat: no-repeat;
+    background-position: left -1012px top -260px;
+  }
 }
 
 .promo__picture img {
   display: block;
-  height: 531px;
+  height: 515px;
   width: 705px;
   position: absolute;
   top: -2px;
   right: -27px;
-  background-image: url("../img/triangle.svg");
-  background-size: 1920px 950px;
-  background-repeat: no-repeat;
-  background-position: left -1038px top -293px;
-  padding-bottom: 15px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .promo b {
@@ -32,7 +40,7 @@
   letter-spacing: 0.07em;
   margin-bottom: 25px;
   word-wrap: break-word;
-  z-index: 1;
+  z-index: 2;
 }
 
 .promo p {
@@ -44,7 +52,7 @@
   padding-left: 96px;
   margin-bottom: 44px;
   word-wrap: break-word;
-  z-index: 1;
+  z-index: 2;
 
   &::before {
     position: absolute;
@@ -62,7 +70,7 @@
   position: relative;
   margin-left: 96px;
   margin-bottom: 131px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .promo span.promo__additional-info {
@@ -84,18 +92,23 @@
   .promo {
     padding-top: 60px;
     padding-left: 87px;
+
+    &::before {
+      right: -308px;
+      top: -60px;
+      width: 653px;
+      height: 406px;
+      background-repeat: no-repeat;
+      background-position: left -981px top -200px;
+      background-size: 1920px 694px;
+    }
   }
 
   .promo__picture img {
-    height: 389px;
-    width: 320px;
-    top: -51px;
-    right: -20px;
-    background-size: 1628px 698px;
-    background-position: left -880px top -212px;
-    padding-top: 36px;
-    padding-left: 60px;
-    padding-bottom: 15px;
+    height: 340px;
+    width: 260px;
+    top: -16px;
+    right: -19px;
   }
 
   .promo b {
@@ -135,19 +148,24 @@
   .promo {
     padding-top: 217px;
     padding-left: 0;
+
+    &::before {
+      right: -464px;
+      top: -12px;
+      width: 653px;
+      height: 406px;
+      background-repeat: no-repeat;
+      background-position: left -977px top -193px;
+      background-size: 1920px 666px;
+    }
   }
 
   .promo__picture img {
-    height: 370px;
-    width: 295px;
+    height: 220px;
+    width: 294px;
     max-width: none;
-    top: -2px;
-    right: -17px;
-    background-size: 1446px 715px;
-    background-position: left -649px top -227px;
-    padding-top: 25px;
-    padding-left: 0;
-    padding-bottom: 125px;
+    top: 23px;
+    right: -15px;
   }
 
   .promo b {
