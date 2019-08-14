@@ -8,7 +8,7 @@
 }
 
 .main-info__advantages {
-  max-width: 1261px;
+  max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 75px;
 }
@@ -21,16 +21,18 @@
 @media ($breakpoints-large) {
   .main-info {
     padding-top: 53px;
+    padding-bottom: 83px;
   }
 
   .main-info__advantages {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 }
 
 @media ($breakpoints-medium) {
   .main-info {
     padding-top: 37px;
+    padding-bottom: 66px;
   }
 
   .main-info__advantages {

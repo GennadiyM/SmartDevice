@@ -1,8 +1,8 @@
 .about-us {
   width: 100%;
   position: relative;
-  padding-left: 225px;
-  padding-right: 97px;
+  padding-left: 245px;
+  padding-right: 84px;
 
   &::before {
     position: absolute;
@@ -11,7 +11,7 @@
     width: 220px;
     height: 317px;
     top: 5px;
-    left: 14px;
+    left: 35px;
     background-image: url("../img/date-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -46,7 +46,7 @@
 @media ($breakpoints-large) {
   .about-us {
     padding-left: 212px;
-    padding-right: 13px;
+    padding-right: 22px;
 
     &::before {
       width: 223px;
@@ -87,7 +87,9 @@
   }
 
   .about-us h2 {
-    margin-bottom: 19px;
+    margin-left: -3px;
+    margin-bottom: 22px;
+    font-size: 28px;
   }
   
   .about-us p {

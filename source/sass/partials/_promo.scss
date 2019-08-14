@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding-top: 57px;
-  padding-left: 6px;
+  padding-left: 26px;
 
   &::before {
     position: absolute;
@@ -13,7 +13,7 @@
     width: 705px;
     height: 515px;
     top: 0;
-    right: 0;
+    right: -21px;
     background-image: url("../img/triangle.svg");
     background-repeat: no-repeat;
     background-position: left -1012px top -260px;
@@ -26,7 +26,7 @@
   width: 705px;
   position: absolute;
   top: -2px;
-  right: -27px;
+  right: -47px;
   z-index: 1;
 }
 
