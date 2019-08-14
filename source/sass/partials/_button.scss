@@ -34,7 +34,13 @@
     width: 180px;
     color: #00b2ff;
     border-color: #00b2ff;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
   }
+
   &:focus {
     outline: none;
   }

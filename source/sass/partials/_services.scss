@@ -1,0 +1,160 @@
+.services {
+  width: 100%;
+  background-color: $second-bg-color;
+  padding-top: 80px;
+}
+
+.services__content-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 122px;
+  padding-right: 0;
+}
+
+.services h2 {
+  @include style-reset;
+  @include font-style (36px, 51px, 400, #ffffff);
+  font-family: $second-font;
+  margin-bottom: 47px;
+}
+
+.services__list {
+  @include default-list;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  margin-right: 26px;
+  margin-bottom: 20px;
+  width: 30.3%;
+  height: 626px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.services__link {
+  @include style-reset;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border 0.2s ease 0s, opacity 0.2s ease 0s;
+
+  &:focus {
+  outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid #00b2ff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.services img {
+  @include style-reset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.services h3 {
+  @include style-reset;
+  @include font-style(20px, 30px, 400, #ffffff);
+  font-family: $second-font;
+  position: absolute;
+  width: 170px;
+  top: 53px;
+  left: 44px;
+}
+
+.services__small-button {
+  position: absolute;
+  display: block;
+  width: 63px;
+  height: 63px;
+  background-color: #00b2ff;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/row-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media ($breakpoints-large) {
+  .services {
+    padding-top: 89px;
+    padding-bottom: 106px;
+  }
+  
+  .services__content-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    line-height: 140.62%;
+    width: 85%;
+    margin-bottom: 37px;
+  }
+
+  .services__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__item {
+    width: 720px;
+    height: 256px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    &:nth-child(3n) {
+      margin-right: auto;
+    }
+  }
+}
+
+@media ($breakpoints-medium) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  
+  .services__content-container {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .services h2 {
+    font-size:28px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+
+  .services__item {
+    width: 290px;
+    height: 256px;
+    margin-bottom: 20px;
+  }
+}
