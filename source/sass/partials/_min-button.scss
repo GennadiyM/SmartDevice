@@ -1,0 +1,39 @@
+.min-button {
+  @include style-reset;
+  position: relative;
+  border: none;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  transition: opacity 0.2s ease 0s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 1px;
+    background-color: #c4c4c4;
+    transition: background ease 0.2s 0s;
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    outline: none;
+    background: #00b2ff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

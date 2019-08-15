@@ -70,12 +70,26 @@
   }
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoints-medium) {
   .site-nav__title-container {
     margin-bottom: 28px;
+    justify-content: space-between;
+  }
+
+  .site-nav__min-button {
+    display: block;
   }
 
   .site-nav__list {
+    margin-bottom: 15px;
+  }
+
+  .site-nav--close .site-nav__list {
     display: none;
+  }
+
+  .site-nav--close .site-nav__min-button::after {
+    transform: rotate(90deg) translateY(-50%);
+    transition: background ease 0.2s 0s, transform ease 0.2s 0s;
   }
 }
