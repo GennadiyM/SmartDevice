@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 (function () {
 
@@ -8,15 +8,15 @@
   };
 
   var Selector = {
-    formFeedback: ".js-form-feedback",
-    buttonOpenModal: ".js-open-modal",
-    buttonCloseModal: ".js-close-feedback",
-    overlay: ".overlay",
+    formFeedback: '.js-form-feedback',
+    buttonOpenModal: '.js-open-modal',
+    buttonCloseModal: '.js-close-feedback',
+    overlay: '.overlay',
   };
 
   var Clases = {
-    overlayShow: "overlay--show",
-    formFeedbackShow: "form-feedback--show",
+    overlayShow: 'overlay--show',
+    formFeedbackShow: 'form-feedback--show',
   };
 
   var formFeedback = document.querySelector(Selector.formFeedback);
@@ -24,45 +24,44 @@
   var buttonCloseModal = document.querySelector(Selector.buttonCloseModal);
   var overlay = document.querySelector(Selector.overlay);
 
-  var onCloseModal = function(evt) {
+  var onCloseModal = function (evt) {
     evt.preventDefault();
     formFeedback.classList.remove(Clases.formFeedbackShow);
     overlay.classList.remove(Clases.overlayShow);
-    buttonCloseModal.removeEventListener("click", onCloseModal);
-    overlay.removeEventListener("click", onCloseModal);
-    document.removeEventListener("keydown", onEscCloseModal);
+    buttonCloseModal.removeEventListener('click', onCloseModal);
+    overlay.removeEventListener('click', onCloseModal);
+    document.removeEventListener('keydown', onEscCloseModal);
   };
 
   var onOpenModal = function (evt) {
     evt.preventDefault();
     formFeedback.classList.add(Clases.formFeedbackShow);
     overlay.classList.add(Clases.overlayShow);
-    buttonCloseModal.addEventListener("click", onCloseModal);
-    overlay.addEventListener("click", onCloseModal);
-    document.addEventListener("keydown", onEscCloseModal);
+    buttonCloseModal.addEventListener('click', onCloseModal);
+    overlay.addEventListener('click', onCloseModal);
+    document.addEventListener('keydown', onEscCloseModal);
   };
 
-  var onEscCloseModal = function(evt) {
-    evt.preventDefault();
+  var onEscCloseModal = function (evt) {
     if (evt.keyCode === Keydown.esc) {
       onCloseModal(evt);
     }
   };
 
-  buttonOpenModal.addEventListener("click", onOpenModal);
+  buttonOpenModal.addEventListener('click', onOpenModal);
 }());
 
 (function () {
   var Selector = {
-    siteNav: ".js-site-nav",
-    adress: ".js-adress",
-    siteNavClose: ".js-site-nav-close",
-    adressClose: ".adress-close",
+    siteNav: '.js-site-nav',
+    adress: '.js-adress',
+    siteNavClose: '.js-site-nav-close',
+    adressClose: '.adress-close',
   };
 
   var Clases = {
-    siteNavClose: "site-nav--close",
-    adressClose: "adress--close",
+    siteNavClose: 'site-nav--close',
+    adressClose: 'adress--close',
   };
 
   var siteNav = document.querySelector(Selector.siteNav);
@@ -73,12 +72,12 @@
   siteNav.classList.add(Clases.siteNavClose);
   adress.classList.add(Clases.adressClose);
 
-  siteNavClose.addEventListener("click", function(evt) {
+  siteNavClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     siteNav.classList.toggle(Clases.siteNavClose);
   });
 
-  adressClose.addEventListener("click", function(evt) {
+  adressClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     adress.classList.toggle(Clases.adressClose);
   });

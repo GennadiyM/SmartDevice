@@ -43,7 +43,6 @@
   };
 
   var onEscCloseModal = function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === Keydown.esc) {
       onCloseModal(evt);
     }
