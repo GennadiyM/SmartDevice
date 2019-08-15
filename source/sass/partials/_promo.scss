@@ -91,7 +91,7 @@
 @media ($breakpoints-large) {
   .promo {
     padding-top: 60px;
-    padding-left: 87px;
+    padding-left: 97px;
 
     &::before {
       right: -290px;
@@ -99,7 +99,7 @@
       width: 653px;
       height: 406px;
       background-repeat: no-repeat;
-      background-position: left -981px top -200px;
+      background-position: left -971px top -200px;
       background-size: 1920px 694px;
     }
   }
@@ -107,8 +107,8 @@
   .promo__picture img {
     height: 340px;
     width: 260px;
-    top: -16px;
-    right: -1px;
+    right: -11px;
+    top: -16px
   }
 
   .promo b {

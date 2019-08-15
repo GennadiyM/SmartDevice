@@ -47,3 +47,27 @@
   margin-right: 4px;
   margin-left: 18px;
 }
+
+@media ($breakpoints-large) {
+  .copyright {
+    justify-content: space-between;
+  }
+
+  .copyright__rules {
+    display: none;
+  }
+  
+  .copyright__paragraph {
+    display: none;
+  }
+
+  .copyrigth__link {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .copyright__adress {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

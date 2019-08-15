@@ -171,3 +171,59 @@ p.main-form__checkbox-container {
 .main-form input[type=checkbox]:focus + label {
   color: #2736d9
 }
+
+@media ($breakpoints-large) {
+  .main-form__wrapper {
+    background-image: none;
+  }
+
+  .main-form__content-container {
+    align-items: center;
+    background-image: none;
+    padding: 80px 0 63px;
+  }
+
+  .main-form__areas-container {
+    width: 615px;
+    padding-left: 25px;
+    margin-right: 0;
+  }
+
+  .main-form__horizontal-container {
+    margin-bottom: 40px;
+  }
+
+  .main-form h2 {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-left: -10px;
+    margin-bottom: 17px;
+  }
+
+  .main-form p {
+    margin-bottom: 56px;
+  }
+
+  .main-form input {
+    width: 279px;
+    min-height: 51px;
+    padding: 8px 14px 17px;
+  }
+
+  .main-form textarea {
+    margin-bottom: 49px;
+  }
+
+  .main-form__button {
+    width: 279px;
+  }
+
+  p.main-form__checkbox-container {
+    margin: 0;
+    width: 272px;
+  }
+
+  .main-form label {
+    padding: 1px 0 0 34px;
+  }
+}

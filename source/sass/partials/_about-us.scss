@@ -45,14 +45,14 @@
 
 @media ($breakpoints-large) {
   .about-us {
-    padding-left: 212px;
-    padding-right: 22px;
+    padding-left: 221px;
+    padding-right: 18px;
 
     &::before {
       width: 223px;
       height: 344px;
       top: 6px;
-      left: 12px;
+      left: 20px;
       background-image: url("../img/date-tablet@1x.png");
     }
   }

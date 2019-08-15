@@ -33,10 +33,6 @@
   flex-wrap: wrap;
 }
 
-.site-nav li {
-//  margin-bottom: 25px;
-}
-
 .site-nav a {
   @include style-reset;
   @include font-style(15px, 25px, 400, #8b9399);
@@ -51,5 +47,25 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media ($breakpoints-large) {
+  .site-nav__title-container {
+    margin-bottom: 24px;
+  }
+
+  .site-nav__title {
+    margin-left: 0;
+  }
+
+  .site-nav__min-button {
+    display: none;
+  }
+
+  .site-nav__list {
+    height: auto;
+    flex-wrap: nowrap;
+    margin-left: -3px;
   }
 }
