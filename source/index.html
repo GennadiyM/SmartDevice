@@ -47,7 +47,7 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="main-nav__button button button--feedback js-modal">Заказать звонок</a>
+          <a href="#" class="main-nav__button button button--feedback js-open-modal">Заказать звонок</a>
         </nav>
         <div class="page-header__promo promo">
           <b>Печатные платы</b>
@@ -233,7 +233,7 @@
           <nav class="page-footer__site-nav site-nav js-site-nav">
             <div class="site-nav__title-container">
               <p class="site-nav__title">Разделы сайта</p>
-              <button class="site-nav__min-button min-button">
+              <button class="site-nav__min-button min-button js-site-nav-close" type="button">
                 <span class="visually-hidden">Показать/скрыть</span>
               </button>
             </div>
@@ -264,7 +264,7 @@
           <div class="page-footer__adress adress js-adress">
             <div class="adress__title-container">
               <p class="adress__title">Наш офис</p>
-              <button class="adress__min-button min-button">
+              <button class="adress__min-button min-button js-adress-close" type="button">
                 <span class="visually-hidden">Показать/скрыть</span>
               </button>
             </div>
@@ -294,6 +294,26 @@
         </div>
       </div>
     </footer>
+    <div class="overlay"></div>
+    <form class="form-feedback js-form-feedback" method="post" name="form-feedback">
+      <button type="button" class="form-feedback__close js-close-feedback">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <label class="visually-hidden" for="name">Имя</label>
+      <input type="text" placeholder="Имя" id="name-feedback" required>
+      <label class="visually-hidden" for="tel">Телефон</label>
+      <input type="tel" placeholder="Телефон" id="-feedback" required>
+      <label class="visually-hidden" for="question">Ваш вопрос</label>
+      <textarea id="question-feedback" rows="6">Ваш вопрос</textarea>
+      <button type="submit" class="button button--form form-feedback__button">Отправить</button>
+      <p class="form-feedback__checkbox-container">
+        <input type="checkbox" checked id="personal-data-feedback">
+        <label for="personal-data">Я согласен на обработку&nbsp; персональных данных</label>
+      </p>
+    </form>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

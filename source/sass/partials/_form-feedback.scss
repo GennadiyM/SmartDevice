@@ -1,0 +1,198 @@
+.form-feedback {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 136px;
+  width: 100%;
+  max-width: 490px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #00b2ff;
+  transform: translateX(-48%);
+  padding: 30px 42.26px 36px 39.28px;
+  z-index: 50;
+  transition: all 0.2s;
+}
+
+.form-feedback--show {
+  display: flex;
+}
+
+.form-feedback__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  transition: opacity 0.2s ease 0s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 1px;
+    background-color: #ffffff;
+    transition: background ease 0.2s 0s;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    outline: none;
+    background: #2736d9;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-feedback h2 {
+  @include style-reset;
+  @include font-style(28px, 140.62%, 400, #ffffff);
+  font-family: $second-font;
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form-feedback p {
+  @include style-reset;
+  @include font-style(16px, 22px, 400, #ffffff);
+  display: block;
+  width: 100%;
+  padding-right: 10px;
+  margin-bottom: 32px;
+}
+
+.form-feedback input {
+  @include font-style(16px, 22px, 400, #ffffff);
+  width: 100%;
+  min-height: 50px;
+  background-color: #19baff;
+  border: 2px solid #19baff;
+  padding: 6px 21px;
+  transition: border 0.2s ease 0s;
+  margin-bottom: 32px;
+
+  &::placeholder {
+    @include font-style(16px, 22px, 400, #ffffff);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+}
+
+.form-feedback textarea {
+  @include font-style(16px, 22px, 400, #ffffff);
+  width: 100%;
+  height: 104px;
+  background-color: #19baff;
+  border: 2px solid #19baff;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  transition: border 0.2s ease 0s;
+
+  &::placeholder {
+    @include font-style(16px, 22px, 400, #ffffff);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+}
+
+.form-feedback__button {
+  width: 100%;
+  min-height: 47px;
+  border-radius: 5px;
+  margin-bottom: 33px;
+}
+
+p.form-feedback__checkbox-container {
+  @include style-reset;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-feedback input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-feedback label {
+  @include style-reset;
+  @include font-style(14px, 16px, 400, #ffffff);
+  position: relative;
+  word-wrap: break-word;
+  width: 100%;
+  min-width: 0;
+  padding: 0 2px 0 47px;
+  transition: color 0.2s ease 0s;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    transition: background 0.2s ease 0s, border 0.2s ease 0s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: none;
+  }
+}
+
+.form-feedback input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/mark.svg");
+}
+
+.form-feedback input[type="checkbox"]:hover + label::before,
+.form-feedback input[type="checkbox"]:focus + label::before {
+  border-color: #3a65db;
+}
+
+.form-feedback input[type="checkbox"]:hover + label,
+.form-feedback input[type="checkbox"]:focus + label {
+  color: #2736d9;
+}
