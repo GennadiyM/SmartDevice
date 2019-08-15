@@ -1,0 +1,52 @@
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.adress__title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.adress__title {
+  @include style-reset;
+  @include font-style(15px, 16px, 400, #1b2d37);
+  font-family: $second-font;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.adress__min-button {
+  display: none;
+}
+
+.adress__tel-list {
+  @include default-list;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.adress a {
+  @include style-reset;
+  @include font-style(15px, 25px, 400, #8b9399);
+  transition: opacity 0.2s ease 0s;
+
+  &:hover,
+  &:focus {
+    color: #1b2d37;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.adress p {
+  @include style-reset;
+  @include font-style(15px, 25px, 400, #8b9399);
+}

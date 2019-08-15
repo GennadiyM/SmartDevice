@@ -1,0 +1,173 @@
+.main-form {
+  background-color: #00b2ff;
+}
+
+.main-form__wrapper {
+  background-image: url("../img/triangle.svg"), url("../img/triangle-white-left@1x.png"), url("../img/triangle-white@1x.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left -855px top -178px,right 13px top 42px,right 0 bottom -22px;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.main-form__content-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url("../img/airplane-desktop@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 39px top 161px;
+  background-size: 39.5%;
+  padding: 90px 16px 73px 25px;
+  margin: 0 auto;
+}
+
+.main-form__areas-container {
+  width: 579px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00b2ff;
+  padding-left: 10px;
+  margin-right: 49px;
+}
+
+.main-form__horizontal-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main-form h2 {
+  @include style-reset;
+  @include font-style(36px, 51px, 400, #ffffff);
+  font-family: $second-font;
+  display: block;
+  width: 100%;
+  margin-left: -10px;
+  margin-bottom: 11px;
+}
+
+.main-form p {
+  @include style-reset;
+  @include font-style(16px, 22px, 400, #ffffff);
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main-form input {
+  @include font-style(16px, 22px, 400, #ffffff);
+  width: 270px;
+  min-height: 50px;
+  background-color: #19baff;
+  border: 2px solid #19baff;
+  padding: 10px 14px;
+  transition: border 0.2s ease 0s;
+
+  &::placeholder {
+    @include font-style(16px, 22px, 400, #ffffff);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+}
+
+.main-form textarea {
+  @include font-style(16px, 22px, 400, #ffffff);
+  width: 100%;
+  background-color: #19baff;
+  border: 2px solid #19baff;
+  padding: 10px 14px;
+  margin-bottom: 42px;
+  transition: border 0.2s ease 0s;
+
+  &::placeholder {
+    @include font-style(16px, 22px, 400, #ffffff);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+}
+
+.main-form__button {
+  width: 270px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+p.main-form__checkbox-container {
+  @include style-reset;
+  display: block;
+  width: 262px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start
+}
+
+.main-form input[type=checkbox] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-form label {
+  @include style-reset;
+  @include font-style(14px, 16px, 400, #ffffff);
+  position: relative;
+  word-wrap: break-word;
+  width: 100%;
+  min-width: 0;
+  padding-left: 32px;
+  transition: color 0.2s ease 0s;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    transition: background 0.2s ease 0s, border 0.2s ease 0s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: none;
+  }
+}
+
+.main-form input[type=checkbox]:checked + label::before {
+  background-image: url("../img/mark.svg");
+}
+
+.main-form input[type=checkbox]:hover + label::before,
+.main-form input[type=checkbox]:focus + label::before {
+  border-color: #3A65DB;
+}
+
+.main-form input[type=checkbox]:hover + label,
+.main-form input[type=checkbox]:focus + label {
+  color: #2736d9
+}

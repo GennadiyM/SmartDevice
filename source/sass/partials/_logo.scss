@@ -68,6 +68,10 @@
   transition: color 0.2s ease 0s;
 }
 
+.logo--footer {
+  width: 230px;
+}
+
 .logo--footer[href] {
   &:hover svg,
   &:focus svg {
@@ -81,6 +85,7 @@
 }
 
 .logo--footer b {
+  width: 152px;
   color: #203c42;
 }
 

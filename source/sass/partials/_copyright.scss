@@ -1,0 +1,49 @@
+.copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.copyright__paragraph,
+.copyright__adress,
+.copyright__rules {
+  @include style-reset;
+  @include font-style(13px, 24px, 400, #8b9399);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.copyrigth__link,
+.copyright__adress a {
+  @include style-reset;
+  @include font-style(13px, 24px, 400, #8b9399);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease 0s;
+
+  &:hover,
+  &:focus {
+    color: #1b2d37;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__paragraph {
+  margin-right: 75px;
+}
+
+.copyrigth__link {
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+.copyright__adress {
+  margin-right: 4px;
+  margin-left: 18px;
+}

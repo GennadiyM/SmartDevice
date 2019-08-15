@@ -1,8 +1,8 @@
 .services {
   width: 100%;
   background-color: $second-bg-color;
-  padding-top: 90px;
-  padding-bottom: 103px;
+  padding-top: 88px;
+  padding-bottom: 105px;
 }
 
 .services__content-container {
@@ -17,7 +17,7 @@
   @include font-style (36px, 51px, 400, #ffffff);
   font-family: $second-font;
   padding-left: 5px;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
 }
 
 .services__list {
@@ -31,8 +31,8 @@
 .services__item {
   margin-right: 26px;
   margin-bottom: 20px;
-  width: 30.3%;
-  height: 626px;
+  width: 30.29%;
+  height: 624px;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -81,7 +81,7 @@
   font-family: $second-font;
   position: absolute;
   width: 170px;
-  top: 53px;
+  top: 50px;
   left: 44px;
 }
 

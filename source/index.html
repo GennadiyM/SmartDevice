@@ -175,25 +175,26 @@
     </main>
     <footer class="page-wrapper__page-footer page-footer">
       <form class="page-footer__main-form main-form">
-        <div class="main-form__content-container">
-          <div class="main-form__background-container"></div>
-          <div class="main-form__areas-container">
-            <h2>Ocтались вопросы? Задайте их нам!</h2>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <div class="main-form__horizontal-container">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" placeholder="Имя" id="name" required>
-              <label class="visually-hidden" for="tel">Телефон</label>
-              <input type="tel" placeholder="Телефон" id="tel">
-            </div>
-            <label class="visually-hidden" for="question">Ваш вопрос</label>
-            <textarea id="question">Ваш вопрос</textarea>
-            <div class="main-form__horizontal-container">
-              <button type="submit">Задать вопрос</button>
-              <p class="main-form__checkbox-container">
-                <input type="checkbox" checked id="personal_data">
-                <label for="personal_data">Я согласен на обработку персональных данных</label>
-              </p>
+        <div class="main-form__wrapper">
+          <div class="main-form__content-container">
+            <div class="main-form__areas-container">
+              <h2>Ocтались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <div class="main-form__horizontal-container">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" placeholder="Имя" id="name" required>
+                <label class="visually-hidden" for="tel">Телефон</label>
+                <input type="tel" placeholder="Телефон" id="tel" required>
+              </div>
+              <label class="visually-hidden" for="question">Ваш вопрос</label>
+              <textarea id="question" rows="6">Ваш вопрос</textarea>
+              <div class="main-form__horizontal-container">
+                <button type="submit" class="button button--form main-form__button">Задать вопрос</button>
+                <p class="main-form__checkbox-container">
+                  <input type="checkbox" checked id="personal_data">
+                  <label for="personal_data">Я согласен на обработку персональных данных</label>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -205,28 +206,36 @@
             <svg width="52px" height="52px"><use xlink:href="#icon-circuit"></use></svg>
               <p class="logo__text">
                 <b lang="en">
-                  Smart Device
+                  Service Device
                 </b>
                 <span>умные технологии</span>
               </p>
             </a>
-            <p class="page-footer__rules">1999-2018 SD Service Devices</p>
+            <p class="page-footer__rules page-footer__rules--top">1999-2018 SD Service Devices</p>
             <ul class="page-footer__social-list social-list">
               <li class="social-list__item">
-                <a href="#" aria-label="Наш фейсбук"></a>
+                <a href="#" aria-label="Наш фейсбук">
+                  <svg width="27px" height="27px"><use xlink:href="#icon-fb"></use></svg>
+                </a>
               </li>
               <li class="social-list__item">
-                <a href="#" aria-label="Наши одноклассники"></a>
+                <a href="#" aria-label="Наши одноклассники">
+                  <svg width="27px" height="27px"><use xlink:href="#icon-ok"></use></svg>
+                </a>
               </li>
               <li class="social-list__item">
-                <a href="#" aria-label="Наш вконтакте"></a>
+                <a href="#" aria-label="Наш вконтакте">
+                  <svg width="27px" height="27px"><use xlink:href="#icon-vk"></use></svg>
+                </a>
               </li>
             </ul>
-          </div>
+          </div>   
           <nav class="page-footer__site-nav site-nav">
             <div class="site-nav__title-container">
               <p class="site-nav__title">Разделы сайта</p>
-              <button class="site-nav__min-button min-button">Показать/скрыть</button>
+              <button class="site-nav__min-button min-button">
+                <span class="visually-hidden">Показать/скрыть</span>
+              </button>
             </div>
             <ul class="site-nav__list">
               <li>
@@ -255,7 +264,9 @@
           <div class="page-footer__adress adress">
             <div class="adress__title-container">
               <p class="adress__title">Наш офис</p>
-              <button class="adress__min-button min-button">Показать/скрыть</button>
+              <button class="adress__min-button min-button">
+                <span class="visually-hidden">Показать/скрыть</span>
+              </button>
             </div>
             <p>г. Мытищи, Олимпийский проспект, д.10</p>
             <ul class="adress__tel-list">
@@ -270,11 +281,17 @@
               </li>
             </ul>
           </div>
-          <div class="page-footer__copyright">
-            <p>Все права защищены</p>
-            <p class="page-footer__rules">1999-2018 SD Service Devices</p>
-            <a href="#">Условия конфиденциальности</a>
-            <p lang="en">Developed by WOW Studio</p>
+        </div>
+      </div>
+      <div class="page-footer__copyright-content">
+        <div class="page-footer__content-container page-footer__content-container--copyright">
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__paragraph">Все права защищены</p>
+            <p class="copyright__rules">1999-2018 SD Service Devices</p>
+            <a class="copyrigth__link" href="#">Условия конфиденциальности</a>
+            <p class="copyright__adress" lang="en">Developed by 
+              <a href="#">WOW Studio</a>
+            </p>
           </div>
         </div>
       </div>

@@ -13,7 +13,22 @@
   padding: 14px 13px 8px 12px;
   word-wrap: break-word;
   cursor: pointer;
-  transition: background 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition: background 0.2s ease 0s, opacity 0.2s ease 0s, color 0.2s ease 0s, border 0.2s ease 0s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #00b2ff;
+    border-color: #00b2ff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--feedback {
     width: 180px;
@@ -38,20 +53,12 @@
     &:hover,
     &:focus {
       color: #ffffff;
+      background-color: #00b2ff;
     }
   }
 
-  &:focus {
-    outline: none;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: #788891;
-  }
-
-  &:active {
-    opacity: 0.3;
+  &--form {
+    padding: 11px 16px 8px 12px;
   }
 }
 
