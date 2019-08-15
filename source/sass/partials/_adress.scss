@@ -52,6 +52,10 @@
   @include font-style(15px, 25px, 400, #8b9399);
 }
 
+p.adress__title {
+  color: #1b2d37;
+}
+
 @media ($breakpoints-medium) {
   .adress__title-container {
     justify-content: space-between;
