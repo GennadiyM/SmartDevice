@@ -56,7 +56,7 @@
   .copyright__rules {
     display: none;
   }
-  
+
   .copyright__paragraph {
     display: none;
   }
@@ -69,5 +69,16 @@
   .copyright__adress {
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media ($breakpoints-large) {
+  .copyright {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .copyrigth__link {
+    margin-bottom: 22px;
   }
 }

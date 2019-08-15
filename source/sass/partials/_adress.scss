@@ -51,3 +51,20 @@
   @include style-reset;
   @include font-style(15px, 25px, 400, #8b9399);
 }
+
+@media ($breakpoints-medium) {
+  .adress__title-container {
+    margin-bottom: 27px;
+    padding-left: 0;
+  }
+
+  .adress p {
+    min-height: 50px;
+    padding-right: 40px;
+  }
+
+  p.adress__title {
+    padding-right: 0;
+    min-height: auto;
+  }
+}

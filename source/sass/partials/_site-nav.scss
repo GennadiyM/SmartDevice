@@ -69,3 +69,13 @@
     margin-left: -3px;
   }
 }
+
+@media ($breakpoints-large) {
+  .site-nav__title-container {
+    margin-bottom: 28px;
+  }
+
+  .site-nav__list {
+    display: none;
+  }
+}
