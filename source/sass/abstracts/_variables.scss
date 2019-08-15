@@ -15,7 +15,5 @@ $breakpoints-large:"max-width: 1023px";
 
 $max-width: 1920px;
 
-$retina: (
-  "dpi": 144dpi,
-  "dppx": 1.5dppx,
-);
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
