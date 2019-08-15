@@ -1,6 +1,6 @@
 .form-feedback {
   position: fixed;
-  display: flex;
+  display: none;
   left: 50%;
   top: 136px;
   width: 100%;
@@ -15,6 +15,7 @@
 }
 
 .form-feedback--show {
+  display: flex;
   transform: translateX(-50%) scale(1);
 }
 
