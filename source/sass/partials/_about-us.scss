@@ -53,10 +53,10 @@
     padding-right: 18px;
 
     &::before {
-    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/date-tablet@2x.png");
-      background-size: 243px auto;
-    }
+      @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+        background-image: url("../img/date-tablet@2x.png");
+        background-size: 243px auto;
+      }
       width: 223px;
       height: 347px;
       top: 6px;
