@@ -7,27 +7,35 @@
   flex-wrap: wrap;
 }
 
+.user-nav__item {
+  flex-shrink: 0;
+
+  &--email svg {
+    width: 19px;
+    height: 14px;
+    margin-right: 20px;
+  }
+
+  &--tel svg {
+    width: 16.91px;
+    height: 16.96px;
+    margin-right: 16px;
+  }
+}
+
+.user-nav__item svg {
+  display: block;
+  flex-shrink: 0;
+  fill: #00b2ff;
+  transition: fill 0.2s ease 0s;
+}
+
 .user-nav__item a {
   @include style-reset;
-  position: relative;
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: opacity 0.2s ease 0s;
-  padding-left: 40px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: background 0.2s ease 0s;
-  }
 
   &:focus {
     outline: none;
@@ -41,31 +49,6 @@
   &:focus svg {
     fill: #ffffff;
   }
-}
-
-.user-nav__item {
-  flex-shrink: 0;
-
-  &--email a::before {
-    width: 19px;
-    height: 14px;
-    background-image: url("../img/email.svg");
-  }
-
-  &--tel a::before {
-    width: 19px;
-    height: 20px;
-    left: 6px;
-    background-image: url("../img/phone.svg");
-  }
-}
-
-.user-nav__item--email a:hover::before {
-  background-image: url("../img/email-white.svg");
-}
-
-.user-nav__item--tel a:hover::before {
-  background-image: url("../img/phone-white.svg");
 }
 
 .user-nav__item span {
@@ -87,43 +70,6 @@
       height: 24px;
       margin-right: 0;
     }
-
-    &--email {
-      width: 25.33px;
-      height: 18.67px;
-    }
-
-    &--tel {
-      width: 24px;
-      height: 24px;
-    }
-  }
-
-  .user-nav__item a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-  }
-
-  .user-nav__item--email a::before {
-    width: 25.33px;
-    height: 18.67px;
-    background-size: 25px 18px;
-  }
-
-  .user-nav__item--email a:hover::before {
-    background-size: 25px 18px;
-  }
-
-  .user-nav__item--tel a::before {
-    width: 24px;
-    height: 24px;
-    background-size: 24px 24px;
-  }
-
-  .user-nav__item--tel a:hover::before {
-    background-size: 24px 24px;
   }
 
   .user-nav__item span {
