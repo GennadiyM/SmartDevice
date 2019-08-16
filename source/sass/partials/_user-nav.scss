@@ -11,19 +11,20 @@
   flex-shrink: 0;
 
   &--email svg {
-    width: 18.62px;
-    height: 13.11px;
+    width: 19px;
+    height: 14px;
     margin-right: 20px;
   }
 
   &--tel svg {
-    width: 18.91px;
-    height: 18.96px;
+    width: 17.91px;
+    height: 17.96px;
     margin-right: 16px;
   }
 }
 
 .user-nav__item svg {
+  display: block;
   flex-shrink: 0;
   fill: #00b2ff;
   transition: fill 0.2s ease 0s;

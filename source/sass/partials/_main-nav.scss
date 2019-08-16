@@ -6,7 +6,9 @@
 
 .main-nav__logo {
   flex-shrink: 0;
+  margin-top: 28px;
   margin-right: 8.2%;
+  margin-bottom: auto;
 }
 
 .main-nav__toggle {
@@ -19,7 +21,9 @@
   border: none;
   cursor: pointer;
   transition: opacity 0.2s ease 0s;
+  margin-top: 53px;
   margin-right: auto;
+  margin-bottom: auto;
 
   &::before,
   &::after {
@@ -62,20 +66,25 @@
 .main-nav__user-nav {
   min-width: 360px;
   width: 30.5%;
+  margin-top: 50px;
   margin-right: 3.5%;
+  margin-bottom: auto;
 }
 
 .main-nav__button {
   flex-shrink: 0;
+  margin-top: 37px;
+  margin-bottom: auto;
 }
 
 @media ($breakpoints-large) {
   .main-nav__logo {
     margin-right: auto;
+    margin-top: 15px;
   }
 
   .main-nav__toggle {
-    margin-top: -4px;
+    margin-top: 37px;
     margin-right: 37px;
   }
 
@@ -83,7 +92,8 @@
     min-width: auto;
     flex-shrink: 0;
     width: 83px;
-    margin-right: 0;
+    margin-right: 1px;
+    margin-top: 32px;
   }
 
   .main-nav__button {
@@ -92,12 +102,18 @@
 }
 
 @media ($breakpoints-medium) {
+  .main-nav__logo {
+    margin-top: 17px;
+  }
+  
   .main-nav__toggle {
-    margin-top: 0;
+    margin-top: 27px;
     margin-right: 27px;
   }
 
   .main-nav__user-nav {
     width: 72px;
+    margin-right: 0;
+    margin-top: 22px;
   }
 }
