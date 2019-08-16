@@ -6,6 +6,7 @@
   height: 16px;
   background-color: transparent;
   transition: opacity 0.2s ease 0s;
+  cursor: pointer;
 
   &::before,
   &::after {

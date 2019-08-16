@@ -181,7 +181,7 @@
               <p>Мы проконсультируем Вас бесплатно</p>
               <div class="main-form__horizontal-container">
                 <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" placeholder="Имя" id="name" required>
+                <input type="text" placeholder="Имя" id="name" minlength="2" required>
                 <label class="visually-hidden" for="tel">Телефон</label>
                 <input type="tel" placeholder="Телефон" id="tel" required>
               </div>
@@ -301,7 +301,7 @@
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <label class="visually-hidden" for="name">Имя</label>
-      <input type="text" placeholder="Имя" id="name-feedback" required>
+      <input type="text" placeholder="Имя" id="name-feedback" minlength="2" required>
       <label class="visually-hidden" for="tel">Телефон</label>
       <input type="tel" placeholder="Телефон" id="-feedback" required>
       <label class="visually-hidden" for="question">Ваш вопрос</label>
@@ -309,7 +309,7 @@
       <button type="submit" class="button button--form form-feedback__button">Отправить</button>
       <p class="form-feedback__checkbox-container">
         <input type="checkbox" checked id="personal-data-feedback">
-        <label for="personal-data">Я согласен на обработку&nbsp; персональных данных</label>
+        <label for="personal-data-feedback">Я согласен на обработку&nbsp; персональных данных</label>
       </p>
     </form>
   </div>

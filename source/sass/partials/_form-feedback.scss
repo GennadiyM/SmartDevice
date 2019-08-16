@@ -28,6 +28,7 @@
   height: 16px;
   background-color: transparent;
   transition: opacity 0.2s ease 0s;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -190,10 +191,13 @@ p.form-feedback__checkbox-container {
 
 .form-feedback input[type="checkbox"]:hover + label::before,
 .form-feedback input[type="checkbox"]:focus + label::before {
-  border-color: #3a65db;
+  border-color: #ffffff;
 }
 
-.form-feedback input[type="checkbox"]:hover + label,
-.form-feedback input[type="checkbox"]:focus + label {
-  color: #2736d9;
+.form-feedback input[type="checkbox"]:hover + label {
+  color: #0a0433;
 }
+
+//.form-feedback input[type="checkbox"]:focus + label {
+//  color: #0a0433;
+//}
