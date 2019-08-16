@@ -233,7 +233,7 @@
                 <input type="tel" placeholder="Телефон" id="tel" required="">
               </div>
               <label class="visually-hidden" for="question">Ваш вопрос</label>
-              <textarea id="question" rows="6">Ваш вопрос</textarea>
+              <textarea id="question" rows="6" minlength="160" placeholder="Ваш вопрос" required=""></textarea>
               <div class="main-form__horizontal-container">
                 <button type="submit" class="button button--form main-form__button">Задать вопрос</button>
                 <p class="main-form__checkbox-container">
@@ -314,7 +314,7 @@
                 <span class="visually-hidden">Показать/скрыть</span>
               </button>
             </div>
-            <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            <p class="adress__adress-description">г. Мытищи, Олимпийский проспект, д.10</p>
             <ul class="adress__tel-list">
               <li>
                 <a href="tel:74955894050">+7&nbsp;(495)&nbsp;589-40-50</a>
@@ -352,7 +352,7 @@
       <label class="visually-hidden" for="tel">Телефон</label>
       <input type="tel" placeholder="Телефон" id="-feedback" required="">
       <label class="visually-hidden" for="question">Ваш вопрос</label>
-      <textarea id="question-feedback" rows="6">Ваш вопрос</textarea>
+      <textarea id="question-feedback" rows="6" minlength="160" placeholder="Ваш вопрос" required=""></textarea>
       <button type="submit" class="button button--form form-feedback__button">Отправить</button>
       <p class="form-feedback__checkbox-container">
         <input type="checkbox" checked="" id="personal-data-feedback">

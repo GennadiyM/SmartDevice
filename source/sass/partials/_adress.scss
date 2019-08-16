@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: max-height 0.4s ease 0s;
 }
 
 .adress__title-container {
@@ -47,54 +48,46 @@
   }
 }
 
-.adress p {
+.adress__adress-description {
   @include style-reset;
   @include font-style(15px, 25px, 400, #8b9399);
 }
 
-p.adress__title {
-  color: #1b2d37;
-}
-
 @media ($breakpoints-medium) {
+  .adress {
+    overflow: hidden;
+
+    &--close {
+      max-height: 74px;
+    }
+  }
+
   .adress__title-container {
     justify-content: space-between;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     padding-left: 0;
   }
 
-  .adress p {
+  .adress__adress-description {
     min-height: 50px;
     padding-right: 40px;
   }
 
-  p.adress__title {
+  .adress__title {
     padding-right: 0;
     min-height: auto;
   }
 
   .adress__min-button {
     display: block;
+    transition: background ease 0.2s 0s, transform ease 0.2s 0s;
   }
 
   .adress__tel-list {
     margin-bottom: 25px;
   }
 
-  .adress--close .adress__tel-list {
-    display: none;
-  }
-
-  .adress--close p {
-    display: none;
-  }
-
-  .adress--close p.adress__title {
-    display: block;
-  }
-
   .adress--close .adress__min-button::after {
     transform: rotate(90deg) translateY(-50%);
-    transition: background ease 0.2s 0s, transform ease 0.2s 0s;
   }
 }
