@@ -81,6 +81,9 @@
 
   .about-us p:last-of-type {
     margin-bottom: 41px;
+    overflow: hidden;
+    max-height: 88px;
+    text-overflow: ellipsis;
   }
 }
 
@@ -106,5 +109,7 @@
 
   .about-us p:last-of-type {
     margin-bottom: 28px;
+    overflow: auto;
+    max-height: none;
   }
 }
