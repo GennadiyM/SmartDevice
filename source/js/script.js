@@ -1,7 +1,6 @@
 'use strict';
 
 (function () {
-
   var Keydown = {
     enter: 13,
     esc: 27

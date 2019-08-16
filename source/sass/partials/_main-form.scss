@@ -73,6 +73,8 @@
   border: 2px solid #19baff;
   padding: 10px 14px;
   transition: border 0.2s ease 0s;
+  cursor: pointer;
+  box-shadow: none;
 
   &::placeholder {
     @include font-style(16px, 22px, 400, #ffffff);
@@ -167,13 +169,16 @@ p.main-form__checkbox-container {
 
 .main-form input[type="checkbox"]:hover + label::before,
 .main-form input[type="checkbox"]:focus + label::before {
-  border-color: #3a65db;
+  border-color: #ffffff;
 }
 
-.main-form input[type="checkbox"]:hover + label,
-.main-form input[type="checkbox"]:focus + label {
-  color: #2736d9;
+.main-form input[type="checkbox"]:hover + label {
+  color: #0a0433;
 }
+
+//.main-form input[type="checkbox"]:focus + label {
+//  color: #0a0433;
+//}
 
 @media ($breakpoints-large) {
   .main-form__wrapper {
@@ -183,7 +188,7 @@ p.main-form__checkbox-container {
   .main-form__content-container {
     align-items: center;
     background-image: none;
-    padding: 80px 0 63px;
+    padding: 80px 0 62px;
   }
 
   .main-form__areas-container {
@@ -193,7 +198,7 @@ p.main-form__checkbox-container {
   }
 
   .main-form__horizontal-container {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
 
   .main-form h2 {
@@ -204,17 +209,18 @@ p.main-form__checkbox-container {
   }
 
   .main-form p {
-    margin-bottom: 56px;
+    margin-bottom: 54px;
   }
 
   .main-form input {
     width: 279px;
     min-height: 51px;
-    padding: 8px 14px 17px;
+    padding: 11px 14px 13px;
   }
 
   .main-form textarea {
-    margin-bottom: 49px;
+    margin-bottom: 46px;
+    height: 158px;
   }
 
   .main-form__button {
