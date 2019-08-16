@@ -42,7 +42,7 @@
     letter-spacing: 0.05em;
     background-color: #00b2ff;
     border: none;
-    padding: 17px 28px 14px 28px;
+    padding: 18px 28px 14px 28px;
   }
 
   &--about-us {
@@ -74,6 +74,7 @@
   .button {
     &--promo {
       width: 378px;
+      padding-top: 19px;
     }
   }
 }

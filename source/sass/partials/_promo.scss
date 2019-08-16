@@ -73,18 +73,25 @@
   z-index: 2;
 }
 
-.promo span.promo__additional-info {
+.promo__additional-info {
   @include style-reset;
   font-size: 14px;
   line-height: 16px;
+  color: #8f969a;
   width: 93px;
   flex-shrink: 0;
   transform: rotate(-90deg);
   opacity: 0.5;
   margin-left: -36px;
+  transition: color 0.2s ease 0s;
 
-  &::before {
-    display: none;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #545b5f;
   }
 }
 
@@ -139,7 +146,7 @@
     z-index: 1;
   }
 
-  .promo span.promo__additional-info {
+  .promo__additional-info {
     display: none;
   }
 }
@@ -193,7 +200,7 @@
     margin: 0 auto;
   }
 
-  .promo span.promo__additional-info {
+  .promo__additional-info {
     display: none;
   }
 }
