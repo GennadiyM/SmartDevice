@@ -9,12 +9,12 @@
   width: 100%;
   min-height: 628px;
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .advantages__item {
   width: 46.72%;
+  height: 100%;
   max-width: 570px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -101,7 +101,6 @@
 
   .advantages__list {
     min-height: auto;
-    align-items: stretch;
   }
 
   .advantages__item {

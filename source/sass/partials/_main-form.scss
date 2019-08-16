@@ -166,10 +166,13 @@ p.main-form__checkbox-container {
   background-image: url("../img/mark.svg");
 }
 
-.main-form input[type="checkbox"]:hover + label::before,
-.main-form input[type="checkbox"]:focus + label::before {
-  border-color: #ffffff;
+.main-form input[type="checkbox"]:hover + label::before {
+  border-color: #0a0433;
 }
+
+//.main-form input[type="checkbox"]:focus + label::before {
+//  border-color: #ffffff;
+//}
 
 .main-form input[type="checkbox"]:hover + label {
   color: #0a0433;
