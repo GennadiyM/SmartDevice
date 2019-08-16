@@ -109,12 +109,21 @@
   .user-nav__item--email a::before {
     width: 25.33px;
     height: 18.67px;
-    background-size: 25.33px 18px;
+    background-size: 25px 18px;
+  }
+
+  .user-nav__item--email a:hover::before {
+    background-size: 25px 18px;
   }
 
   .user-nav__item--tel a::before {
     width: 24px;
     height: 24px;
+    background-size: 24px 24px;
+  }
+
+  .user-nav__item--tel a:hover::before {
+    background-size: 24px 24px;
   }
 
   .user-nav__item span {
