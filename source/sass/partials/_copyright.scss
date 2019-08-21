@@ -5,7 +5,7 @@
 }
 
 .copyright__paragraph,
-.copyright__adress,
+.copyright__address,
 .copyright__rules {
   @include style-reset;
   @include font-style(13px, 24px, 400, #8b9399);
@@ -15,7 +15,7 @@
 }
 
 .copyright__link,
-.copyright__adress a {
+.copyright__address a {
   @include style-reset;
   @include font-style(13px, 24px, 400, #8b9399);
   letter-spacing: 0.04em;
@@ -43,7 +43,7 @@
   margin-right: auto;
 }
 
-.copyright__adress {
+.copyright__address {
   margin-right: 4px;
   margin-left: 18px;
 }
@@ -66,7 +66,7 @@
     margin-right: 0;
   }
 
-  .copyright__adress {
+  .copyright__address {
     margin-right: 0;
     margin-left: 0;
   }

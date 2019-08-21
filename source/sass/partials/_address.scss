@@ -1,11 +1,11 @@
-.adress {
+.address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: max-height 0.4s ease 0s;
 }
 
-.adress__title-container {
+.address__title-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
   padding-left: 3px;
 }
 
-.adress__title {
+.address__title {
   @include style-reset;
   @include font-style(15px, 16px, 400, #1b2d37);
   font-family: $second-font;
@@ -21,18 +21,18 @@
   text-transform: uppercase;
 }
 
-.adress__min-button {
+.address__min-button {
   display: none;
 }
 
-.adress__tel-list {
+.address__tel-list {
   @include default-list;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.adress a {
+.address a {
   @include style-reset;
   @include font-style(15px, 25px, 400, #8b9399);
   transition: opacity 0.2s ease 0s;
@@ -48,13 +48,13 @@
   }
 }
 
-.adress__adress-description {
+.address__address-description {
   @include style-reset;
   @include font-style(15px, 25px, 400, #8b9399);
 }
 
 @media ($breakpoints-medium) {
-  .adress {
+  .address {
     overflow: hidden;
 
     &--close {
@@ -62,32 +62,32 @@
     }
   }
 
-  .adress__title-container {
+  .address__title-container {
     justify-content: space-between;
     margin-bottom: 28px;
     padding-left: 0;
   }
 
-  .adress__adress-description {
+  .address__address-description {
     min-height: 50px;
     padding-right: 40px;
   }
 
-  .adress__title {
+  .address__title {
     padding-right: 0;
     min-height: auto;
   }
 
-  .adress__min-button {
+  .address__min-button {
     display: block;
     transition: background ease 0.2s 0s, transform ease 0.2s 0s;
   }
 
-  .adress__tel-list {
+  .address__tel-list {
     margin-bottom: 25px;
   }
 
-  .adress--close .adress__min-button::after {
+  .address--close .address__min-button::after {
     transform: rotate(90deg) translateY(-50%);
   }
 }
