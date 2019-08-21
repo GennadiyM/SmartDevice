@@ -12,10 +12,6 @@
 }
 
 .main-form__content-container {
-  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("../img/airplane-desktop@2x.png");
-    background-size: 511px 288px;
-  }
   width: 100%;
   max-width: 1300px;
   display: flex;
@@ -24,7 +20,7 @@
   background-image: url("../img/airplane-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left 39px top 161px;
-  background-size: 39.5%;
+  background-size: 511px 288px;
   padding: 90px 16px 73px 25px;
   margin: 0 auto;
 }
