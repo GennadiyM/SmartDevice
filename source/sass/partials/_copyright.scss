@@ -14,7 +14,7 @@
   flex-shrink: 0;
 }
 
-.copyrigth__link,
+.copyright__link,
 .copyright__adress a {
   @include style-reset;
   @include font-style(13px, 24px, 400, #8b9399);
@@ -38,7 +38,7 @@
   margin-right: 75px;
 }
 
-.copyrigth__link {
+.copyright__link {
   margin-left: 10%;
   margin-right: auto;
 }
@@ -61,7 +61,7 @@
     display: none;
   }
 
-  .copyrigth__link {
+  .copyright__link {
     margin-left: 0;
     margin-right: 0;
   }
@@ -78,7 +78,7 @@
     justify-content: flex-start;
   }
 
-  .copyrigth__link {
+  .copyright__link {
     margin-bottom: 22px;
   }
 }

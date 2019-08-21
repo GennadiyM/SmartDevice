@@ -30,7 +30,7 @@
   z-index: 1;
 }
 
-.promo b {
+.promo h1 {
   @include style-reset;
   @include font-style(80px, 94px, 700, #ffffff);
   position: relative;
@@ -43,27 +43,31 @@
   z-index: 2;
 }
 
+.promo__text-block {
+  position: relative;
+  margin-bottom: 44px;
+  width: 705px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.promo__text-block span {
+  @include style-reset;
+  display: block;
+  width: 66px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-right: 30px;
+  transform: translateY(-16px) translateX(2px);
+}
+
 .promo p {
   @include style-reset;
   @include font-style(22px, 34px, 400, #ffffff);
-  position: relative;
-  width: 705px;
+  width: 611px;
   min-width: 0;
-  padding-left: 96px;
-  margin-bottom: 44px;
   word-wrap: break-word;
-  z-index: 2;
-
-  &::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 66px;
-    height: 2px;
-    top: 17px;
-    left: 3px;
-    background-color: #ffffff;
-  }
 }
 
 .promo__button {
@@ -118,25 +122,28 @@
     top: -16px;
   }
 
-  .promo b {
+  .promo h1 {
     width: 500px;
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 29px;
   }
 
+  .promo__text-block {
+    width: 600px;
+    margin-bottom: 56px;
+  }
+
   .promo p {
+    width: 480px;
     font-size: 18px;
     line-height: 27px;
-    width: 500px;
-    padding-left: 51px;
-    margin-bottom: 56px;
+  }
 
-    &::before {
-      width: 33px;
-      top: 15px;
-      left: 2px;
-    }
+  .promo__text-block span {
+    width: 33px;
+    margin-right: 18px;
+    transform: translateY(-11px) translateX(3px);
   }
 
   .promo__button {
@@ -175,25 +182,27 @@
     right: -15px;
   }
 
-  .promo b {
+  .promo h1 {
     width: 228px;
     font-size: 40px;
     line-height: 47px;
     margin-bottom: 27px;
   }
 
+  .promo__text-block {
+    margin-bottom: 40px;
+  }
+
   .promo p {
     font-size: 16px;
     line-height: 25px;
     width: 272px;
-    padding-left: 50px;
-    margin-bottom: 40px;
+  }
 
-    &::before {
-      width: 33px;
-      top: 15px;
-      left: 2px;
-    }
+  .promo__text-block span {
+    width: 33px;
+    margin-right: 17px;
+    transform: translateY(-22px) translateX(1px);
   }
 
   .promo__button {
