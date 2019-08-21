@@ -13,7 +13,7 @@
     overlay: '.overlay',
   };
 
-  var Clases = {
+  var Classes = {
     overlayShow: 'overlay--show',
     formFeedbackShow: 'form-feedback--show',
   };
@@ -25,8 +25,8 @@
 
   var onCloseModal = function (evt) {
     evt.preventDefault();
-    formFeedback.classList.remove(Clases.formFeedbackShow);
-    overlay.classList.remove(Clases.overlayShow);
+    formFeedback.classList.remove(Classes.formFeedbackShow);
+    overlay.classList.remove(Classes.overlayShow);
     buttonCloseModal.removeEventListener('click', onCloseModal);
     overlay.removeEventListener('click', onCloseModal);
     document.removeEventListener('keydown', onEscCloseModal);
@@ -34,8 +34,8 @@
 
   var onOpenModal = function (evt) {
     evt.preventDefault();
-    formFeedback.classList.add(Clases.formFeedbackShow);
-    overlay.classList.add(Clases.overlayShow);
+    formFeedback.classList.add(Classes.formFeedbackShow);
+    overlay.classList.add(Classes.overlayShow);
     buttonCloseModal.addEventListener('click', onCloseModal);
     overlay.addEventListener('click', onCloseModal);
     document.addEventListener('keydown', onEscCloseModal);
@@ -53,14 +53,14 @@
 (function () {
   var Selector = {
     siteNav: '.js-site-nav',
-    adress: '.js-adress',
+    adress: '.js-address',
     siteNavClose: '.js-site-nav-close',
-    adressClose: '.adress-close',
+    adressClose: '.address-close',
   };
 
-  var Clases = {
+  var Classes = {
     siteNavClose: 'site-nav--close',
-    adressClose: 'adress--close',
+    adressClose: 'address--close',
   };
 
   var siteNav = document.querySelector(Selector.siteNav);
@@ -78,8 +78,8 @@
       heightAdress = adress.offsetHeight + 'px';
       flagKnowHeightElement = true;
     }
-    siteNav.classList.add(Clases.siteNavClose);
-    adress.classList.add(Clases.adressClose);
+    siteNav.classList.add(Classes.siteNavClose);
+    adress.classList.add(Classes.adressClose);
   }
 
   window.addEventListener('resize', function () {
@@ -88,26 +88,26 @@
         heightSiteNav = siteNav.offsetHeight + 'px';
         heightAdress = adress.offsetHeight + 'px';
         flagKnowHeightElement = true;
-        siteNav.classList.add(Clases.siteNavClose);
-        adress.classList.add(Clases.adressClose);
+        siteNav.classList.add(Classes.siteNavClose);
+        adress.classList.add(Classes.adressClose);
       }
     }
   });
 
   siteNavClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    siteNav.classList.toggle(Clases.siteNavClose);
+    siteNav.classList.toggle(Classes.siteNavClose);
     siteNav.style = '';
-    if (!siteNav.classList.contains(Clases.siteNavClose)) {
+    if (!siteNav.classList.contains(Classes.siteNavClose)) {
       siteNav.style.maxHeight = heightSiteNav;
     }
   });
 
   adressClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    adress.classList.toggle(Clases.adressClose);
+    adress.classList.toggle(Classes.adressClose);
     adress.style = '';
-    if (!adress.classList.contains(Clases.adressClose)) {
+    if (!adress.classList.contains(Classes.adressClose)) {
       adress.style.maxHeight = heightAdress;
     }
   });
