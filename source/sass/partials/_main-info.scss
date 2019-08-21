@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .main-info {
     background-image: url("../img/triangle-alipce-gray.svg");
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .main-info {
     padding-top: 37px;
     padding-bottom: 66px;

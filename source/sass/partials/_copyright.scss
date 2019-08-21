@@ -48,7 +48,7 @@
   margin-left: 18px;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .copyright {
     justify-content: space-between;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .copyright {
     flex-direction: column;
     justify-content: flex-start;

@@ -58,7 +58,7 @@
   word-wrap: break-word;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .user-nav__item {
     &--email svg {
       width: 25.33px;

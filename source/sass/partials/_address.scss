@@ -53,7 +53,7 @@
   @include font-style(15px, 25px, 400, #8b9399);
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .address {
     overflow: hidden;
 

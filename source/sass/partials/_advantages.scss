@@ -79,7 +79,7 @@
   word-wrap: break-word;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .advantages {
     padding-left: 34px;
     padding-right: 6px;
@@ -113,7 +113,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .advantages {
     padding-left: 14px;
     padding-right: 16px;

@@ -43,7 +43,7 @@
   display: none;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .about-us {
     padding-left: 13px;
     padding-right: 18px;
@@ -81,7 +81,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .about-us {
     padding-right: 10px;
 

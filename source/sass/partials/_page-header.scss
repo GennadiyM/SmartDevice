@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .page-header {
     min-height: 687.47px;
     background-image: url("../img/noise-tablet@1x.png");
@@ -44,7 +44,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .page-header {
     min-height: 647.47px;
     background-image: url("../img/noise-mobile@1x.png");

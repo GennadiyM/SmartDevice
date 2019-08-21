@@ -178,7 +178,7 @@ p.main-form__checkbox-container {
 //  color: #0a0433;
 //}
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .main-form__wrapper {
     background-image: none;
   }
@@ -235,7 +235,7 @@ p.main-form__checkbox-container {
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .main-form__content-container {
     padding: 31px 0 15px;
   }

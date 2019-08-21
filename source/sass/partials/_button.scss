@@ -70,7 +70,7 @@
   display: inline;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .button {
     &--promo {
       width: 378px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .button {
     &--promo {
       width: 100%;

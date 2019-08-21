@@ -51,7 +51,7 @@
   }
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .site-nav__title-container {
     margin-bottom: 24px;
   }
@@ -71,7 +71,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .site-nav {
     overflow: hidden;
 

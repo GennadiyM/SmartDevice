@@ -77,7 +77,7 @@
   margin-bottom: auto;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .main-nav__logo {
     margin-right: auto;
     margin-top: 15px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .main-nav__logo {
     margin-top: 17px;
   }

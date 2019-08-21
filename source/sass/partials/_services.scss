@@ -98,7 +98,7 @@
   background-position: center;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .services {
     padding-top: 49px;
     padding-bottom: 33px;
@@ -151,7 +151,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .services {
     padding-top: 50px;
     padding-bottom: 36px;

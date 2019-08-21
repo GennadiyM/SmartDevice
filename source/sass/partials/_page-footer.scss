@@ -71,7 +71,7 @@
   padding-left: 8px;
 }
 
-@media ($breakpoints-large) {
+@media ($breakpoint-large) {
   .page-footer__main-content {
     padding-bottom: 38px;
   }
@@ -134,7 +134,7 @@
   }
 }
 
-@media ($breakpoints-medium) {
+@media ($breakpoint-medium) {
   .page-footer__main-content {
     padding-top: 41px;
     padding-bottom: 0;
