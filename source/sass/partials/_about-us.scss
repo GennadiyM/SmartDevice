@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   padding-left: 35px;
-  padding-right: 84px;
+  padding-right: 74px;
 }
 
 .about-us__picture {
@@ -15,7 +15,7 @@
 }
 
 .about-us__text-wrapper {
-  margin-left: -10px;
+  transform: translateX(-10px);
 }
 
 .about-us h2 {
@@ -55,7 +55,7 @@
   }
 
   .about-us__text-wrapper {
-    margin-left: -36px;
+    transform: translateX(-36px);
     margin-top: 5px;
   }
 
@@ -98,10 +98,11 @@
   .about-us__text-wrapper {
     margin: 0;
     width: 100%;
+    transform: none;
   }
 
   .about-us h2 {
-    margin-left: -3px;
+    transform: translateX(-3px);
     margin-bottom: 22px;
     font-size: 28px;
   }

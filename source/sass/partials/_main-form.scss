@@ -50,7 +50,7 @@
   font-family: $second-font;
   display: block;
   width: 100%;
-  margin-left: -10px;
+  transform: translateX(-6px);
   margin-bottom: 11px;
 }
 
@@ -203,7 +203,7 @@ p.main-form__checkbox-container {
   .main-form h2 {
     font-size: 32px;
     line-height: 140.62%;
-    margin-left: -10px;
+    transform: translateX(-4px);
     margin-bottom: 17px;
   }
 
@@ -258,7 +258,7 @@ p.main-form__checkbox-container {
   .main-form h2 {
     font-size: 28px;
     min-height: 78px;
-    margin-left: 0;
+    transform: none;
     margin-bottom: 12px;
   }
 

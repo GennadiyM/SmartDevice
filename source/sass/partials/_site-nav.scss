@@ -67,7 +67,7 @@
   .site-nav__list {
     height: auto;
     flex-wrap: nowrap;
-    margin-left: -3px;
+    transform: translateX(-3px);
   }
 }
 

@@ -84,9 +84,8 @@
   color: #8f969a;
   width: 93px;
   flex-shrink: 0;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateX(-36px);
   opacity: 0.5;
-  margin-left: -36px;
   transition: color 0.2s ease 0s;
 
   &:hover,
@@ -207,9 +206,5 @@
 
   .promo__button {
     margin: 0 auto;
-  }
-
-  .promo__additional-info {
-    display: none;
   }
 }
