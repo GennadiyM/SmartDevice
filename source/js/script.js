@@ -111,7 +111,50 @@
   });
 
   addressClose.addEventListener('click', function (evt) {
-    evt.preventDefault();
+    evt.preventDefault(window.innerWidth);
     closedElement(address, Classes.addressClose, heightAddress);
   });
+}());
+
+(function () {
+  var textContainer = document.querySelector('#js-text');
+  var startText = textContainer.textContent;
+  var maxBreakpoint = 1024;
+  var minLengthText = 200;
+
+  var textArr = startText.split('');
+  textArr.length = minLengthText;
+  textArr.push('..');
+  var shotText = textArr.join('');
+
+  var checkBreackpoint = function (breakpoint) {
+    var windowWidth = window.innerWidth;
+    var resultVal = false;
+    if (windowWidth < breakpoint) {
+      resultVal = true;
+    }
+    return resultVal;
+  };
+
+  if (checkBreackpoint(maxBreakpoint)) {
+    textContainer.textContent = shotText;
+  }
+
+  var onResizeText = function () {
+    if (checkBreackpoint(maxBreakpoint)) {
+      textContainer.textContent = shotText;
+      window.removeEventListener('resize', onResizeText);
+      window.addEventListener('resize', onReterneText);
+    }
+  };
+
+  var onReterneText = function () {
+    if (!checkBreackpoint(maxBreakpoint)) {
+      textContainer.textContent = startText;
+      window.removeEventListener('resize', onReterneText);
+      window.addEventListener('resize', onResizeText);
+    }
+  };
+
+  window.addEventListener('resize', onResizeText);
 }());
