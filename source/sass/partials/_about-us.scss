@@ -84,6 +84,7 @@
 @media ($breakpoint-medium) {
   .about-us {
     padding-right: 10px;
+    padding-left: 16px;
 
     &::before {
       display: none;
@@ -111,7 +112,6 @@
 
   .about-us p:last-of-type {
     margin-bottom: 28px;
-    overflow: auto;
-    max-height: none;
+    max-height: 177px;
   }
 }
