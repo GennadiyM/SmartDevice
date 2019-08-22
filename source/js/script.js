@@ -82,7 +82,7 @@
     address.classList.add(Classes.addressClose);
   }
 
-  window.addEventListener('resize', function () {
+  var onResize = function () {
     if (!flagKnowHeightElement) {
       if (window.innerWidth < 768) {
         heightSiteNav = siteNav.offsetHeight + 'px';
@@ -91,8 +91,11 @@
         siteNav.classList.add(Classes.siteNavClose);
         address.classList.add(Classes.addressClose);
       }
+      window.removeEventListener('resize', onResize);
     }
-  });
+  };
+
+  window.addEventListener('resize', onResize);
 
   var closedElement = function (element, style, height) {
     element.classList.toggle(style);
