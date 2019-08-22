@@ -53,62 +53,62 @@
 (function () {
   var Selector = {
     siteNav: '.js-site-nav',
-    adress: '.js-address',
+    address: '.js-address',
     siteNavClose: '.js-site-nav-close',
-    adressClose: '.address-close',
+    addressClose: '.address-close',
   };
 
   var Classes = {
     siteNavClose: 'site-nav--close',
-    adressClose: 'address--close',
+    addressClose: 'address--close',
   };
 
   var siteNav = document.querySelector(Selector.siteNav);
-  var adress = document.querySelector(Selector.adress);
+  var address = document.querySelector(Selector.address);
   var siteNavClose = document.querySelector(Selector.siteNav);
-  var adressClose = document.querySelector(Selector.adress);
+  var addressClose = document.querySelector(Selector.address);
 
   var heightSiteNav = 'none';
-  var heightAdress = 'none';
+  var heightAddress = 'none';
   var flagKnowHeightElement = false;
 
   if (window.innerWidth < 768) {
     if (!flagKnowHeightElement) {
       heightSiteNav = siteNav.offsetHeight + 'px';
-      heightAdress = adress.offsetHeight + 'px';
+      heightAddress = address.offsetHeight + 'px';
       flagKnowHeightElement = true;
     }
     siteNav.classList.add(Classes.siteNavClose);
-    adress.classList.add(Classes.adressClose);
+    address.classList.add(Classes.addressClose);
   }
 
   window.addEventListener('resize', function () {
     if (!flagKnowHeightElement) {
       if (window.innerWidth < 768) {
         heightSiteNav = siteNav.offsetHeight + 'px';
-        heightAdress = adress.offsetHeight + 'px';
+        heightAddress = address.offsetHeight + 'px';
         flagKnowHeightElement = true;
         siteNav.classList.add(Classes.siteNavClose);
-        adress.classList.add(Classes.adressClose);
+        address.classList.add(Classes.addressClose);
       }
     }
   });
 
+  var closedElement = function (element, style, height) {
+    element.classList.toggle(style);
+    element.style = '';
+    if (!element.classList.contains(style)) {
+      element.style.maxHeight = height;
+    }
+  };
+
   siteNavClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    siteNav.classList.toggle(Classes.siteNavClose);
-    siteNav.style = '';
-    if (!siteNav.classList.contains(Classes.siteNavClose)) {
-      siteNav.style.maxHeight = heightSiteNav;
-    }
+    closedElement(siteNav, Classes.siteNavClose, heightSiteNav);
   });
 
-  adressClose.addEventListener('click', function (evt) {
+  addressClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    adress.classList.toggle(Classes.adressClose);
-    adress.style = '';
-    if (!adress.classList.contains(Classes.adressClose)) {
-      adress.style.maxHeight = heightAdress;
-    }
+    closedElement(address, Classes.addressClose, heightAddress);
   });
 }());
